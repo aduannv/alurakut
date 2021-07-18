@@ -274,6 +274,7 @@ export async function getServerSideProps(context) {
     
   const { githubUser } = jwt.decode(token)
   
+  console.log(githubUser)
   return {
     props: { githubUser }, // will be passed to the page component as props
   }
